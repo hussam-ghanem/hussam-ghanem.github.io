@@ -1,0 +1,485 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* SECTION 1: Hero */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+.hero-section .text h2 {
+  font-size: 45px;
+}
+.hero-section .head {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .head img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* SECTION 2: Skills */
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+
+/* From Uiverse.io by Juanes200122 */ 
+.skill-level-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.container .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.html {
+  width: 100%;
+  background: #ff6347; /* Tomato */
+  animation-delay: 0.1s;
+}
+
+.skill-per.css {
+  width: 90%;
+  background: #4682b4; /* SteelBlue */
+  animation-delay: 0.1s;
+}
+
+.skill-per.javascript {
+  width: 50%;
+  background: #FFD700; /* Khaki */
+  animation-delay: 0.2s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per.html .tooltip {
+  background: #ff6347; /* Tomato */
+}
+
+.skill-per.html .tooltip::before {
+  background-color: #ff6347; /* Tomato */
+}
+
+.skill-per.css .tooltip {
+  background: #4682b4; /* SteelBlue */
+}
+
+.skill-per.css .tooltip::before {
+  background-color: #4682b4; /* SteelBlue */
+}
+
+.skill-per.javascript .tooltip {
+  background: #FFD700; /* Khaki */
+}
+
+.skill-per.javascript .tooltip::before {
+  background-color: #FFD700; /* Khaki */
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+
+
+
+/* SECTION 4: Contact */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #404040;
+  margin: 0 30px;
+  transition: 0.5s;
+}
+ul li a span {
+  position: absolute;
+  transition: transform 0.5s;
+}
+ul li a span:nth-child(1),
+ul li a span:nth-child(3) {
+  width: 100%;
+  height: 3px;
+  background: #404040;
+}
+ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+ul li a span:nth-child(2),
+ul li a span:nth-child(4) {
+  width: 3px;
+  height: 100%;
+  background: #404040;
+}
+ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+ul li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+ul li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.whatsapp:hover {
+  color: #25d366;
+}
+.whatsapp:hover span {
+  background: #25d366;
+}
+
+.github:hover {
+  color: #6e5494;
+}
+.github:hover span {
+  background: #6e5494;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+.facebook:hover span {
+  background: #3b5998;
+}
+
+.instagram:hover{
+  color: #E1306C;
+}
+
+.instagram:hover span {
+  background: #E1306C;
+}
+
+.links-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+
+}
+
+
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .head img {
+    width: 300px;
+  }
+
+  /* SECTION 3: Contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
+ .links-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ }
+
+ .link{
+  padding-top: 20px;
+ }
+}
+
+@media (max-width: 600px) {
+  /* NAVBAR */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* SECTION 1: Hero */
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+
+  /* SECTION 3: Contact */
+  .contact-section {
+    padding: 0 20px;
+  }
+
+  .links-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link{
+    padding-top: 20px;
+  }
+}
+
