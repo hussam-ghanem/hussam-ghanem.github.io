@@ -209,27 +209,27 @@ nav .right a span {
 }
 
 .skill-per.html .tooltip {
-  background: #ff6347; /* Tomato */
+  background: #b33a20; /* Tomato */
 }
 
 .skill-per.html .tooltip::before {
-  background-color: #ff6347; /* Tomato */
+  background-color: #b33a20; /* Tomato */
 }
 
 .skill-per.css .tooltip {
-  background: #4682b4; /* SteelBlue */
+  background: #1e3a8a; /* SteelBlue */
 }
 
 .skill-per.css .tooltip::before {
-  background-color: #4682b4; /* SteelBlue */
+  background-color: #1e3a8a; /* SteelBlue */
 }
 
 .skill-per.javascript .tooltip {
-  background: #FFD700; /* Khaki */
+  background: #d4b830; /* Khaki */
 }
 
 .skill-per.javascript .tooltip::before {
-  background-color: #FFD700; /* Khaki */
+  background-color: #d4b830; /* Khaki */
 }
 
 .skill-per .tooltip {
