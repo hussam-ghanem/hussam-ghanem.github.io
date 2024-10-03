@@ -225,11 +225,11 @@ nav .right a span {
 }
 
 .skill-per.javascript .tooltip {
-  background: #d4b830; /* Khaki */
+  background: #b8860b; /* Khaki */
 }
 
 .skill-per.javascript .tooltip::before {
-  background-color: #d4b830; /* Khaki */
+  background-color: #b8860b; /* Khaki */
 }
 
 .skill-per .tooltip {
