@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /private/
-Allow: /
+Disallow: /
+Allow: /index.html
 
 Sitemap: https://hussam-ghanem.github.io/sitemap.xml
