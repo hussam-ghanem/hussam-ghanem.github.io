@@ -3,4 +3,4 @@ Disallow: / # This disallows everything
 
 Allow: /index.html # This allows the index.html page
 
-Sitemap: https://hussam-ghanem.github.io/mysitemap.xml # This specifies the location of your sitemap
+Sitemap: https://hussam-ghanem.github.io/sitemap.xml # This specifies the location of your sitemap
