@@ -142,6 +142,47 @@ nav .right a:last-child {
   border-radius: 7px;
 }
 
+.testimony-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.testimony-section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.testimony-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimony-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+
+.testimony-section .group .person-details img {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimony-section .group .person-details p {
+  font-weight: 600;
+}
+
+.testimony-section .group .person-details p:last-child {
+  font-weight: normal;
+}
+
+.testimony-section .group .text {
+  flex: 8;
+}
+
 /* SECTION 4: Contact */
 .contact-section {
   padding: 0 50px;
@@ -296,6 +337,15 @@ ul li a:hover span:nth-child(4) {
     width: 300px;
   }
 
+  /* SECTION 3: Testimony */
+  .testimony-section {
+    text-align: center;
+  }
+
+  .testimony-section .group {
+    flex-direction: column;
+  }
+
   /* SECTION 3: Contact */
   .contact-section .group {
     flex-direction: column;
@@ -349,6 +399,11 @@ ul li a:hover span:nth-child(4) {
 
   .skills-section .cells .cell span {
     font-size: 16px;
+  }
+
+  /* SECTION 3: Testimony */
+  .testimony-section {
+    padding: 0 20px;
   }
 
   /* SECTION 3: Contact */
