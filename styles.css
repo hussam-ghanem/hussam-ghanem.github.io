@@ -133,15 +133,6 @@ nav .right a:last-child {
 .skills-section .cells .cell span {
   font-size: 18px;
 }
-
-.container {
-  position: relative;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 15px;
-  padding: 10px 20px;
-  border-radius: 7px;
-}
 .testimony-a {
   color: blue;
   font-weight: bold;
