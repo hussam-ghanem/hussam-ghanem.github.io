@@ -141,6 +141,9 @@ nav .right a:last-child {
   padding: 10px 20px;
   border-radius: 7px;
 }
+.testimony-a {
+  color: blue;
+}
 
 .testimony-section {
   padding: 0 50px;
